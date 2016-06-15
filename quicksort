@@ -1,0 +1,43 @@
+procedure swap(var a,b:longint);
+var tmp:longint;
+begin
+        tmp:=a;
+        a:=b;
+        b:=tmp;
+end;
+
+procedure sort(var a:array of longint; l,r:longint);
+var
+        i,pivot:longint;
+begin
+        if (l>=r) then begin
+        end else begin
+                pivot:=l+random(r-l+1);
+                swap(a[pivot],a[l]);
+                pivot:=l;
+                for i:=l+1 to r do begin
+                        if (a[i]<a[l]) then begin
+                                inc(pivot);
+                                swap(a[i],a[pivot]);
+                        end;
+                end;
+                swap(a[pivot],a[l]);
+                sort(a,l,pivot-1);
+                sort(a,pivot+1,r);
+        end;
+end;
+
+var
+        n,i,med:longint;
+        x:array of longint;
+begin
+        randomize;
+        readln(n);
+        setlength(x,n+1);
+        for i:=0 to n-1 do read(x[i]);
+        sort(x,0,n-1);
+        for i:=0 to n-1 do begin
+                write(x[i]);
+        end;
+        writeln;
+end.
