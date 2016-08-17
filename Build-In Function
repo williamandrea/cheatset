@@ -1,0 +1,270 @@
+PERINTAH-PERINTAH DALAM PASCAL
+
+Berikut adalah perintah-perintah Unit System Golongan Arithmatic:
+Int :
+Perintah untuk mengabaikan angka dibalik koma. Penggunaannya : Int(45,78)=45
+Frac:
+Mengambil desimal suatu bilangan. Frac(45,78)=0,78 . (Frac=Fraction)
+Sqr:
+Mencari pangkat 2 dari suatu bilangan. Sqr(3)=9. (Sqr=Square)
+Sqrt:
+Mencari akar pangkat dua dari suatu bilangan. Sqrt(16)=4. (Sqrt=Square Root)
+Exp:
+Untuk mencari eksponensial (exponential) dari suatu bilangan. Contoh Exp dari 1 =2,72
+Ln:
+Mencari logaritma natural dari suatu bilangan. (Ln=logarithma natural).
+Pi :
+Untuk memasukkan bilangan pi (3,1415926536)
+Sin :
+Untuk mencari Sinus dari suatu bilangan dalam satuan radian.
+Bentuk umumnya adalah: Sin(angka)
+Untuk mengkonversi kedalam derajat, maka harus ditambahkan rumus:Sin(Angka/(180/Pi).
+Cos:
+Untuk mencari Cosinus dari suatu bilangan dalam satuan radian.
+Bentuk umumnya adalah : Cos(angka)
+Untuk mengkonversi kedalam derajat maka harus ditambahkan rumus:Cos(angka/(180/Pi)
+Tan:
+Turbo pascal tidak menyediakan perintah untuk mencari tangen dari suatu bilangan. Tetapi dengan perintah Sinus dan Cosinus, maka Tangen dari suatu bilangan dengan dicari dengan rumus : Tan=Sin(angka)/Cos(angka)
+Arctan:
+Untuk mencari Arctangen dari suatu bilangan.
+ArcSin:
+Sama dengan Tan, Turbo Pascal tidak menyediakan perintah untuk mencari Arcsinus dari suatu bilangan. Tetapi dengan adanya perintah Arctan, Sqr dan Sqrt, maka ArcSin dari suatu bilangan dapat dicari dengan rumus : ArcSin(x)=ArcTan(x/Sqrt (1-Sqr(x))), dimana x adalah bilangan Real.
+ArcCos:
+Turbo pascal tidak menyediakan ArcCos.Rumusnya adalah : ArcCos(x)=ArcTan(sqrt(1-sqr(x)) /x), dimana x adalah bilangan Real.
+Abs:
+
+http://beststimik.blogspot.com/...
+
+
+
+KEMUDIAN STATEMEN-STATEMEN DALAM PASCAL
+
+Statemen adalah perintah untuk pengerjaan program pascal. Statemen terletak di bagian deklarasi statemen dengan diawali oleh kata cadangan BEGIN dan diakhiri dengan kata cadangan END. Akhir dari setiap statemen diakhiri dengan titik koma(;). Statemenstatemen dalam bahasa Pascal terdiri dari pernyataan yang berupa fungsi dan prosedur yang telah disediakan sebagai perintah standar Turbo Pascal.
+
+1. Statemen-statemen yang digunakan untuk input/output
+1.1. READ/READLN(prosedur)
+Digunakan untuk memasukkan (input) data lewat keyboard ke dalam suatu variabel.
+Sintaks: READ/READLN(V);
+Keterangan :
+V = variabel.
+READ = pada statemen ini posisi kursor tidak pindah ke baris selanjutnya.
+READLN = pada statemen ini posisi kursor akan pindah ke baris selanjutnya setelah di input.
+1.2. READKEY(fungsi)
+Untuk pembacaan sebuah karakter dari keyboard. Tipe data yang dihasilkan adalah
+char.
+Sintaks: READKEY;
+1.3. WRITE/WRITELN(prosedur)
+Digunakan untuk menampilkan isi dari suatu nilai variabel di layar.
+Sintaks: WRITE/WRITELN(V);
+Keterangan :
+V = variabel.
+WRITE/WRITELN = sama dengan READ/READLN.
+2. Statemen-statemen yang digunakan untuk pengaturan letak di layer
+2.1. CLRSCR(prosedur)
+Digunakan untuk membersihkan layar.
+sintaks: CLRSCR;
+2.2. GOTOXY(prosedur)
+Untuk menempatkan posisi kursor pada layar.
+Sintaks: GOTOXY(X, Y: Byte);
+Keterangan :
+X = sumbu X (posisi horisontal), Y = sumbu Y (posisi vertikal)
+2.3. DELLINE(prosedur)
+Untuk menghapus sebuah baris pada posisi kursor dan menaikkan baris-baris
+dibawahnya.
+Sintaks: DELLINE;
+2.4. INSLINE(prosedur)
+Untuk menyisipkan sebuah baris pada posisi kursor dan menggeser kebawah tampilantampilan
+baris dibawahnya.
+Sintaks: INSLINE;
+2.5. DELAY(prosedur)
+Untuk menghentikan sejenak proses program.
+Sintaks: DELAY(MS: Word);
+Keterangan : MS = ukuran waktu dalam milisecond.-
+3. Statemen yang digunakan untuk memanipulasi string
+3.1. CONCAT(fungsi)
+Untuk menggabungkan 2 atau beberapa variabel string.
+Sintaks: CONCAT(s1 [,s2,...,sn]: String) : STRING;
+contoh: CONCAT(‘ABC’,'DEF’) { ABCDEF }
+3.2. COPY(fungsi)
+Mengambil satu(1) atau beberapa karakter dari sebuah string.
+Sintaks: COPY(S,Index,Count) : String;
+Keterangan :
+S = sebuah string (string).
+Index = posisi awal kita akan mengambil beberapa karakter (integer)
+Count = banyaknya karakter yang akan diambil (integer).
+3.3. DELETE(prosedur)
+Menghapus sebagian karakter dari sebuah string.
+Sintaks: DELETE(S,Index,Count);
+Keterangan : sama dengan statemen COPY.
+
+3.4. INSERT(prosedur)
+Menyisipkan satu(1) atau beberapa karakter ke dalam sebuah string.
+Sintaks: INSERT(Source,var S,Index);
+Keterangan :
+Source = sumber string untuk disisipi (string)
+var S = string tujuan yang akan disisipi oleh string Source (string)
+Index = posisi mulai (integer).
+3.5. LENGTH(fungsi)
+Memberikan nilai panjang dari suatu string (jumlah karakterdalam string).
+Sintaks: LENGTH(S);
+Keterangan :
+S = string
+LENGTH(S) menghasilkan nilai integer.
+3.6. POS(fungsi)
+Mencari posisi sebuah bagian string (substring) didalam sebuah string.
+Sintaks: POS(Substr,S); {menghasilkan nilai Byte}
+Keterangan :
+Substr = substring yang akan dicari posisinya di dalam sebuah string S. Bila
+bernilai 0 berarti nilai string yang dicari tidak ada.
+3.7. STR(prosedur)
+Merubah nilai numerik ke dalam nilai string.
+Sintaks: STR(N,S);
+Keterangan :
+N = data tipe integer,
+S = data tipe string.
+3.8. VAL(prosedur)
+Merubah nilai string ke dalam nilai numerik.
+Sintaks: VAL(S,N,P);
+16
+Keterangan :
+S = nilai string,
+N = nilai real,
+P = posisi salah.
+Nilai string harus berisi angka, plus atau minus, bila tidak berarti kesalahan dan letak kesalahannya ditunjukkan oleh variabel posisi salah. Jika benar, maka nilai variabel tsb = 0 (nol).
+3.9. UPCASE(fungsi)
+Memberikan huruf kapital dari argumen.
+Sintaks: UPCASE(S);
+Keterangan :
+S = variabel bertipe karakter.
+4. Statemen-statemen untuk perhitungan aritmatik
+4.1. ABS(fungsi)
+Memberikan nilai mutlak dari suatu argumen.
+Sintaks: ABS(x);
+
+4.2. ARCTAN(fungsi)
+Memberikan nilai dari fungsi arctangent dari perhitungan goniometri.
+Sintaks: ARCTAN(x);
+Dimana x dapat bertipe real atau integer dan akan menghasil kan nilai bertipe real.
+
+4.3. COS(fungsi)
+Memberikan nilai dari fungsi Cosinus.
+Sintaks: COS(x);
+
+4.4. EXP(fungsi)
+Menghitung nilai pangkat dari bilangan e (bilangan alam),
+yaitu sebesar x.
+Sintaks: EXP(x);
+x dapat bertipe real atau integer dan akan menghasilkan nilai bertipe real.
+
+4.5. FRAC(fungsi)
+Untuk mendapatkan nilai pecahan dari suatu bilangan.
+Sintaks: FRAC(x);
+Tipe dari x sama seperti yang diatas.
+
+4.6. INT(fungsi)
+Memberikan nilai integer (bilangan bulat) dari suatu variabel dengan membuang bilangan
+di belakang koma.
+Sintaks: INT(X);
+
+4.7. LN(fungsi)
+Digunakan untuk menghitung nilai logaritma alam (natural logarithm) dari nilai x.
+Sintaks: LN(x);
+
+4.8. SIN(fungsi)
+Memberikan nilai dari fungsi Sinus.
+Sintaks: SIN(x);
+
+4.9. SQR(fungsi)
+Digunakan untuk menghitung nilai pangkat kuadrat dari suatu bilangan.
+Sintaks: SQR(x);
+Tipe dari x bisa berupa real maupun integer. Dan hasilnya akan sama dengan tipedari x.
+
+4.10. SQRT(fungsi)
+Digunakan untuk menghitung nilai akar dari suatu bilangan.
+
+5. Statemen-statemen untuk transfer nilai dari suatu variable
+5.1. CHR(fungsi)
+Merubah nilai dari byte ke bentuk karakter yang sesuai dengan kode ASCII.
+Sintaks: CHR(x);
+Keterangan : x bertipe byte
+contoh : WRITELN(CHR(61);
+hasilnya : a
+
+5.2. ORD(fungsi)
+Merubah nilai suatu variabel dari bentuk karakter ke bentuk longint.
+Sintaks: ORD(X);
+Keterangan : x bertipe char
+contoh : WRITELN(ORD(‘B’);
+hasilnya : 42
+
+5.3. ROUND(fungsi)
+Membulatkan data tipe real ke data tipe longint.
+Sintaks: ROUND(X);
+Keterangan : Jika nilai pecahan < 0,5 maka dibulatkan kebawah.
+Jika nilai pecahan > 0,5 maka dibulatkan keatas.
+contoh : WRITELN(’10/3 dibulatkan = ‘,ROUND(10/3));
+hasilnya : 10/3 dibulatkan = 3
+
+5.4. TRUNC(fungsi)
+Membulatkan kebawah data tipe real ke data tipe longint.
+Sintaks: TRUNC(X);
+contoh :
+WRITELN(’20/3 dibulatkan kebawah = ‘,TRUNC(20/3));
+hasilnya : 20/3 dibulatkan kebawah = 6
+6. Statemen-statemen untuk memanipulasi data
+6.1. PRED(fungsi)
+Memberikan nilai sebelum nilai argumen dalam urutannya dalam ASCII.
+Sintaks: PRED(x);
+
+6.2. SUCC(fungsi)
+Memberikan nilai sesudah nilai argumen dalam urutannya dalam ASCII.
+Sintaks: SUCC(x);
+
+6.3. INC(fungsi)
+Menambah (increments) nilai suatu variabel.
+Sintaks: INC(x,i); {i >= 1}
+
+6.4. DEC(fungsi)
+Mengurangi (decrements) nilai suatu variabel.
+Sintaks: DEC(x,i); {i >=1}
+7. Statemen-statemen tambahan (warna,suara dan window)
+7.1. TEXTCOLOR(prosedur)
+Untuk mengatur warna dari karakter-karakter di layar.
+Sintaks: TEXTCOLOR(color : Byte);
+Catatan : untuk pilihan warna lihat pada buku Turbo Pascal.
+
+7.2. TEXTBACKGROUND(prosedur)
+Untuk mengatur warna latar belakang dari karakter-karakter dilayar.
+Sintaks: TEXTBACKGROUND(Color : Byte);
+
+7.3. WINDOW(prosedur)
+Untuk membuat suatu jendela (window) yang terletak pada layar.Sintaks: WINDOW(x1,x2,y1,y2 : Byte);x1,x2 = kordinat kiri atas dengan nilai maksimal sesuai dengan mode layar. y1,y2 = kordinat kanan bawah dgn nilai maksimal sesuai dengan mode layar.
+
+7.4. TEXTMODE(prosedur)
+Untuk mengatur lebar layar, 80 kolom atau 40 kolom.
+Sintaks: TEXTMODE(Mode: Byte);
+Default = C80
+7.5. SOUND(prosedur)
+Untuk mengaktifkan suara(beep) pada internal speaker.
+Sintaks: SOUND(Hz : word);
+Untuk mengnonaktifkannya, gunakan statemen NOSOUND.
+Ciri Program Komputer:
+Umumnya setiap program komputer memiliki ciri-ciri berikut ini :
+• dijalankan secara berurutan (sequence) dari atas ke bawah (awal dan akhir)
+• memiliki pernyataan bersyarat (IF …. Then, IF .. Then .. Else…, Case… OF) dan
+• memiliki pernyataan berulangan (For… Do, While….Do, Repeat … Until)
+Untuk membentuk ke tiga syarat tersebut program memiliki tahap-tahap :
+• Input
+• Proses
+• Output
+Sistem Kerja Komputer Sistem Kerja Program
+Anda perhatikan kembali modul I hal 1, diagram alir (flow chart) menjumlahkan dua buah bilangan seperti gambar di bawah ini :
+Program Menjumlahkan(A,B);
+Var
+A, B : Integer;
+Begin
+A:=5;
+B:=15;
+C:=A+B;
+Writeln(C);
+End.
