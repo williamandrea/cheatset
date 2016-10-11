@@ -1,0 +1,10 @@
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\bin\Debug\Belajar_Database.exe.config
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\obj\Debug\Belajar_Database.Form1.resources
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\obj\Debug\Belajar_Database.Resources.resources
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\obj\Debug\Belajar_Database.vbproj.GenerateResource.Cache
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\bin\Debug\Belajar_Database.exe
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\bin\Debug\Belajar_Database.pdb
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\bin\Debug\Belajar_Database.xml
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\obj\Debug\Belajar_Database.exe
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\obj\Debug\Belajar_Database.xml
+E:\VISUAL BASIC\Belajar_Database\Belajar_Database\obj\Debug\Belajar_Database.pdb
