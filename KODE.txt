@@ -1,0 +1,15 @@
+	FORMAT:	      		KODE:
+•	3GP			1
+•	WMV			2
+•	AVI			3
+•	JPG			4
+•	RM			5
+•	MPG			6
+•	DOCX			7
+•	XLS			8
+•	EXIT			9
+•	EXE			10
+•	MP4			11
+•	PPTX			12
+•	PNG			13
+•	PDF			14
